@@ -13,6 +13,7 @@
 	</target>
 	
 	<target name="zip" depends="clean">
+		<echo>"basedir is ${basedir}"</echo>
 		<zip destfile="${server-name}.zip" basedir="${folder-to-zip}" excludes="build.xml, manifest.yml, .project"/>			
 	</target>
 	
